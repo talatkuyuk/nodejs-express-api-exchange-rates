@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const express = require('express')
 
 const app = express()
-const port = 80
+const port = 3000
 
 
 app.get('/:currency', async (req, res) => {
