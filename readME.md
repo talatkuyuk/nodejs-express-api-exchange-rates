@@ -2,7 +2,7 @@
 
 > $ node app.js  
   
-Herhangi bir API isteği www.currencyconverterapi.com sitesine ayrı ayrı üç istek göndermektedir. ww.currencyconverterapi.com sitesi ise toplamda bir saatte en fazla 100 istek kabul etmektedir. O yüzden kendi API key'inizi kullanmanızı istirham ederim.
+Buradaki herhangi bir API isteği www.currencyconverterapi.com sitesine ayrı ayrı üç istek göndermektedir. ww.currencyconverterapi.com sitesi ise toplamda bir saatte en fazla 100 istek kabul etmektedir. O yüzden kendi API key'inizi kullanmanızı istirham ederim.
 
 ## api kullanımı (browser'da)
  
