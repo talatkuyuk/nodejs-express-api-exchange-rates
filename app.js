@@ -2,7 +2,9 @@ const fetch = require('node-fetch')
 const express = require('express')
 
 const app = express()
-const port = 3000
+app.use(express.static("info"))
+
+const port = process.env.PORT || 5000
 
 
 app.get('/:currency', async (req, res) => {
@@ -113,5 +115,5 @@ app.get('/:currency', async (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at :${port}`)
+  console.log(`Exchange Rate App is listening at :${port}`)
 })
