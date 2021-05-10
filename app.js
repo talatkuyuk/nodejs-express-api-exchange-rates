@@ -4,13 +4,14 @@ const express = require('express')
 const app = express()
 app.use(express.static("info"))
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
+const API_KEY = "50fc9de4a729557262c5";
 
 
 app.get('/:currency', async (req, res) => {
 
 	const getURI = (exchange) => {
-		return `https://free.currconv.com/api/v7/convert?q=${exchange}&compact=ultra&apiKey=50fc9de4a729557262c5`
+		return `https://free.currconv.com/api/v7/convert?q=${exchange}&compact=ultra&apiKey=${API_KEY}`
 	}
 	const currency = req.params.currency
 
