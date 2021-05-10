@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 const express = require('express')
 
 const app = express()
-const port = 3000
+const port = 80
 
 
 app.get('/:currency', async (req, res) => {
@@ -113,5 +113,5 @@ app.get('/:currency', async (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at :${port}`)
 })
